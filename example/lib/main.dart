@@ -10,12 +10,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(title: const Text("Model Viewer")),
         body: ModelViewer(
           backgroundColor: Colors.grey[300],
           //src: 'https://modelviewer.dev/shared-assets/models/Astronaut.glb',
-          src: 'assets/LowerJawScan.gltf', // a bundled asset file
+          src: 'assets/test.glb', // a bundled asset file
           alt: "A 3D model of an Astronaut",
           ar: false,
           autoRotate: false,
